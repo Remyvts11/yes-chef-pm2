@@ -39,3 +39,16 @@ h1 {
 h2 {
     text-align: center;
 }
+
+.recipe-card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-card {
+    width: 30%; 
+    padding: 20px;
+    border: 10px solid #000000;
+    border-radius: 5px;
+    cursor: pointer; 
+}
