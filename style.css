@@ -6,7 +6,7 @@ body {
 h1 {
     text-align: center;
     font-size: xxxx-large;
-    color: #ca482e;
+    color: #DC143C;
 }
 
 .navbar.responsive {
@@ -22,7 +22,7 @@ h1 {
 .nav-list {
     display: flex;
     list-style: none;
-    background-color: #ffffff;
+    background-color: #0047AB;
     color: #ffffff;
 }
 
@@ -31,12 +31,13 @@ h1 {
 }
 
 .nav-list li a {
-    color: #ca482e;
+    color: #DC143C;
     font-size: 36px;
 }
 
 .nav-list li a:hover {
     color: #df8a79;
+    text-decoration: underline;
 }
 
 h2 {
@@ -56,7 +57,14 @@ img {
 .recipe-card {
     width: 30%; 
     padding: 20px;
-    border: 10px solid #ca482e;
+    border: 10px solid #DC143C;
     border-radius: 5px;
     cursor: pointer; 
+}
+
+.recipe-card: hover {
+    display: indent;
+}    
+
+
 }
