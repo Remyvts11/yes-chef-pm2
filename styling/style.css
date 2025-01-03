@@ -1,6 +1,5 @@
 body {
-    background-color: #98cd7d;
-    
+    background-color: #b3d3a3;  
 }
 
 .navbar.responsive {
@@ -16,8 +15,8 @@ body {
 .nav-list {
     display: flex;
     list-style: none;
-    background-color: #db8709;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #b3d3a3;
 }
 
 .nav-list li {
@@ -25,8 +24,7 @@ body {
 }
 
 .nav-list li a {
-    text-decoration: "Merriweather", serif;
-    color: #f7e99f;
+    color: #ca482e;
     font-size: 36px;
 }
 
