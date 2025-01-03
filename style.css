@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
 body {
     background-color: #ffffff;  
 }
 
 h1 {
     text-align: center;
+    font-size: xxxx-large;
+    color: #ca482e;
 }
 
 .navbar.responsive {
@@ -53,7 +56,7 @@ img {
 .recipe-card {
     width: 30%; 
     padding: 20px;
-    border: 10px solid #000000;
+    border: 10px solid #ca482e;
     border-radius: 5px;
     cursor: pointer; 
 }
