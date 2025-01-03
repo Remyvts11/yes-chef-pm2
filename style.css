@@ -2,6 +2,9 @@ body {
     background-color: #b3d3a3;  
 }
 
+h1 {
+    text-align: center;
+}
 
 .navbar.responsive {
     display: flex;
@@ -16,7 +19,7 @@ body {
 .nav-list {
     display: flex;
     list-style: none;
-    background-color: #ffffff;
+    background-color: #b3d3a3;
     color: #b3d3a3;
 }
 
@@ -30,5 +33,9 @@ body {
 }
 
 .nav-list li a:hover {
-    color: #ffffff;
+    color: #df8a79;
+}
+
+h2 {
+    text-align: center;
 }
