@@ -1,5 +1,5 @@
 body {
-    background-color: #b3d3a3;  
+    background-color: #ffffff;  
 }
 
 h1 {
@@ -19,8 +19,8 @@ h1 {
 .nav-list {
     display: flex;
     list-style: none;
-    background-color: #b3d3a3;
-    color: #b3d3a3;
+    background-color: #ffffff;
+    color: #ffffff;
 }
 
 .nav-list li {
@@ -38,6 +38,11 @@ h1 {
 
 h2 {
     text-align: center;
+}
+
+img {
+    float: right;
+    
 }
 
 .recipe-card-container {
