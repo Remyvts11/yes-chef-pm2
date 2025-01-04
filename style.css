@@ -56,9 +56,9 @@ img {
 }
 
 .recipe-card {
-    width: 30%; 
+    width: 25%; 
     padding: 20px;
-    margin: 30px;
+    margin: 10px;
     border: 10px solid #DC143C;
     border-radius: 5px;
     cursor: pointer; 
