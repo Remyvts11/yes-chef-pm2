@@ -31,3 +31,6 @@ borderd table- https://getbootstrap.com/docs/4.1/content/tables/
     </tr>
   </tbody>
 </table>
+
+
+game difficulty star rating inspired by code produced by https://www.geeksforgeeks.org/star-rating-using-html-css-and-javascript/

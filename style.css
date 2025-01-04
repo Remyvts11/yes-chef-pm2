@@ -52,11 +52,13 @@ img {
 .recipe-card-container {
     display: flex;
     justify-content: space-between;
+    font-size: 50px;
 }
 
 .recipe-card {
     width: 30%; 
     padding: 20px;
+    margin: 30px;
     border: 10px solid #DC143C;
     border-radius: 5px;
     cursor: pointer; 
