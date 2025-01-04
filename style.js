@@ -12,18 +12,3 @@ recipeCards.forEach(card => {
     card.classList.toggle('active'); 
   });
 });
-
-
-selectButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    
-
-    const selectButtons = document.querySelectorAll('.select-button');
-
-    selectButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const recipeTitle = button.getAttribute('data-recipe-title'); 
-        localStorage.setItem('selectedRecipe', recipeTitle); 
-        window.location.href = 'salade-rc.html'; 
-      });
-    });

@@ -31,3 +31,26 @@ h1 {
   .card-content {
     display: block;
   }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+  }
+
+  .timer-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .timer-text {
+    font-size: 48px;
+    font-weight: bold;
+  }
