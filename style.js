@@ -4,7 +4,7 @@ function startGame(recipe) {
     window.location.href = "game.html"; 
 }
 
-//recipe cardsclickability
+//recipe cards clickability
 const recipeCards = document.querySelectorAll('.recipe-card');
 
 recipeCards.forEach(card => {
