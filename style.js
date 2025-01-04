@@ -1,7 +1,14 @@
 function startGame(recipe) {
-    // Example: Store the selected recipe in a variable
     localStorage.setItem("selectedRecipe", recipe); 
 
-    // Example: Redirect to the game page
     window.location.href = "game.html"; 
 }
+
+//recipe cardsclickability
+const recipeCards = document.querySelectorAll('.recipe-card');
+
+recipeCards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active'); 
+  });
+});

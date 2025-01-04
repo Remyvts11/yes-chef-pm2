@@ -71,3 +71,19 @@ img {
 .star {
     color: #DC143C; 
   }
+
+  /*styling for recipe-cards*/
+  .recipe-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer; 
+  }
+  
+  .card-content {
+    display: none; 
+  }
+  
+  .recipe-card.active .card-content {
+    display: block; 
+  }
