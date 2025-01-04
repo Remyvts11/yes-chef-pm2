@@ -68,5 +68,6 @@ img {
     display: indent;
 }    
 
-
-}
+.star {
+    color: #DC143C; 
+  }
