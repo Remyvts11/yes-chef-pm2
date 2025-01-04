@@ -81,7 +81,7 @@ img {
   }
   
   .card-content {
-    display: none; 
+    display: block; 
   }
   
   .recipe-card.active .card-content {
