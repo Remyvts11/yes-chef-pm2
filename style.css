@@ -101,24 +101,29 @@ img {
     cursor: pointer;
   }
 
+/*fridge.html styling*/
 
-  .ingredient-name {
-    text-align: center;
-  }
   .ingredient-shelf {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .ingredient-item {
-    text-align: center; 
+    flex-wrap: wrap; /* Allow items to wrap onto multiple rows */
+    justify-content: center; /* Center the shelf horizontally */
+    align-items: center; /* Center items vertically within the shelf */
+}
+
+.ingredient-item {
+    display: flex;
+    flex-direction: column; /* Arrange image and text vertically */
+    align-items: center; 
     margin: 10px; 
-  }
-  
-  .ingredient-icon {
+    width: 100px; /* Set a maximum width for each item */
+}
+
+.ingredient-icon {
     width: 50px;
-    height: 50px; 
-    margin-bottom: 5px; 
-  }
+    height: 50px;
+}
+
+.ingredient-name {
+    text-align: center;
+    margin-top: 5px; 
+}

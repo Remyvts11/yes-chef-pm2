@@ -1,7 +1,7 @@
 function startGame(recipe) {
     localStorage.setItem("selectedRecipe", recipe); 
 
-    window.location.href = "game.html"; 
+    window.location.href = "fridge.html"; 
 }
 
 //recipe cards clickability
@@ -12,3 +12,5 @@ recipeCards.forEach(card => {
     card.classList.toggle('active'); 
   });
 });
+
+
