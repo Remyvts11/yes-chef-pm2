@@ -23,6 +23,11 @@ h1 {
     flex-direction: row; 
     margin: 40px; 
     width: 100px; 
+    cursor: pointer;
+}
+.selected {
+    border: 2px solid green; 
+    transform: scale(1.05); 
 }
 
 .ingredient-icon {
