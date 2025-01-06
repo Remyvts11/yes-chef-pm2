@@ -61,6 +61,4 @@ h1 {
     font-weight: bold;
   }
 
-  .ingredient-card:hover {
-    transform: scale(1.05); /* Increase card size slightly on hover */
-  }
+  

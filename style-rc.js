@@ -17,18 +17,17 @@ const timerContainer = document.querySelector('.timer-container');
 
     function startTimer() {
       let timeLeft = 5;
-
+    
       const timerInterval = setInterval(() => {
         timerText.textContent = timeLeft; 
-
+    
         if (timeLeft <= 0) {
           clearInterval(timerInterval); 
-          window.location.href = ['pizza-rc.html', 'salade-rc.html', 'prawn-rc.html', 'patatas-rc.html']; 
+          const randomIndex = Math.floor(Math.random() * 4); // Generate random index
+          const randomPage = ['pizza-rc.html', 'salade-rc.html', 'prawn-rc.html', 'patatas-rc.html'][randomIndex]; 
+          window.location.href = randomPage; 
         }
-
+    
         timeLeft--; // Decrement the time
       }, 1000); // Update every 1 second
     }
-
-    // Start the timer automatically when the page loads
-    startTimer(); 

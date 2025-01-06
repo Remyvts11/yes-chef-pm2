@@ -26,8 +26,8 @@ h1 {
     cursor: pointer;
 }
 .selected {
-    border: 2px solid green; 
-    transform: scale(1.05); 
+    border: 2px solid green; /* Adjust border color as needed */
+    transform: scale(1.05); /* Optional: Slightly enlarge the selected item */
 }
 
 .ingredient-icon {
@@ -38,3 +38,7 @@ h1 {
 .ingredient-name {
     text-align: center;
 }
+
+.ingredient-card:hover {
+    transform: scale(1.05); /* Increase card size slightly on hover */
+  }

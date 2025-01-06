@@ -44,7 +44,6 @@ selectedImages = [];
 ingredientItems.forEach(item => item.classList.remove('selected')); 
 }
 }
-//visual clicking the ingredients in fridge.html
 const correctImages = ["assets/ingerdients/milk.png", "assets/ingerdients/prawn.jpeg", 
   "assets/ingerdients/olives.jpeg", "assets/ingerdients/salami.jpeg"]; 
 const ingredientItems = document.querySelectorAll('.ingredient-item');
