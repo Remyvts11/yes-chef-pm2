@@ -22,7 +22,7 @@ h1 {
 .nav-list {
     display: flex;
     list-style: none;
-    background-color: #0047AB;
+    background-color: #ffffff;
     color: #ffffff;
 }
 
@@ -69,7 +69,7 @@ img {
   }
 
 .star {
-    color: #DC143C; 
+    color: gold; 
   }
 
   /*styling for recipe-cards*/

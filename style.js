@@ -14,24 +14,33 @@ recipeCards.forEach(card => {
 });
 
 //fridge ingredients interactivity
-const button = document.getElementById('myButton');
-  let clickCount = 0;
-  const correctIngredients = ['flour', 'sugar', 'eggs', 'butter']; // Array of correct ingredients
+const correctImages = ["assets/ingerdients/milk.png", "assets/ingerdients/prawn.jpeg", 
+  "assets/ingerdients/olives.jpeg", "assets/ingerdients/salami.jpeg"]; 
+const ingredientItems = document.querySelectorAll('.ingredient-item');
+let selectedImages = []; 
 
-  button.addEventListener('click', () => {
-    clickCount++;
+ingredientItems.forEach(item => {
+item.addEventListener('click', () => {
+const imgSrc = item.querySelector('img').src;
+if (selectedImages.includes(imgSrc)) {
+selectedImages = selectedImages.filter(src => src !== imgSrc);
+item.classList.remove('selected'); 
+} else {
+selectedImages.push(imgSrc);
+item.classList.add('selected'); 
+}
 
-    if (clickCount === 4) {
-      // Check if all ingredients are correct
-      const allCorrect = correctIngredients.every(ingredient => document.documentElement.textContent.includes(ingredient));
+checkAnswer(); 
+});
+});
 
-      if (allCorrect) {
-        // Redirect to another page on all correct clicks
-        window.location.href = 'your_target_page.html'; 
-      } else {
-        button.style.backgroundColor = 'red'; // Indicate incorrect selection
-      }
-    } else {
-      button.style.backgroundColor = 'blue'; // Button remains active for 3 clicks
-    }
-  });
+function checkAnswer() {
+if (selectedImages.length === 4 && 
+selectedImages.every(img => correctImages.includes(img))) {
+alert("Congratulations! You selected all the correct images."); 
+} else if (selectedImages.length === 4) {
+alert("Incorrect. Please try again.");
+selectedImages = []; 
+ingredientItems.forEach(item => item.classList.remove('selected')); 
+}
+}

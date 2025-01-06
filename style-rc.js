@@ -23,7 +23,7 @@ const timerContainer = document.querySelector('.timer-container');
 
         if (timeLeft <= 0) {
           clearInterval(timerInterval); 
-          window.location.href = 'pizza-rc.html', 'salade-rc.html', 'prawn-rc.html', 'patatas-rc.html'; 
+          window.location.href = ['pizza-rc.html', 'salade-rc.html', 'prawn-rc.html', 'patatas-rc.html']; 
         }
 
         timeLeft--; // Decrement the time
