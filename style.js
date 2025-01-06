@@ -14,10 +14,6 @@ recipeCards.forEach(card => {
 });
 
 //fridge ingredients interactivity
-const correctImages = ["assets/ingerdients/milk.png", "assets/ingerdients/prawn.jpeg", 
-  "assets/ingerdients/olives.jpeg", "assets/ingerdients/salami.jpeg"]; 
-const ingredientItems = document.querySelectorAll('.ingredient-item');
-let selectedImages = []; 
 
 ingredientItems.forEach(item => {
 item.addEventListener('click', () => {
