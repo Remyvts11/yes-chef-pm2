@@ -26,7 +26,7 @@ h1 {
     cursor: pointer;
 }
 .selected {
-    border: 2px solid green; /* Adjust border color as needed */
+    border: auto solid green; /* Adjust border color as needed */
     transform: scale(1.05); /* Optional: Slightly enlarge the selected item */
 }
 
@@ -42,3 +42,4 @@ h1 {
 .ingredient-card:hover {
     transform: scale(1.05); /* Increase card size slightly on hover */
   }
+

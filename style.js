@@ -14,7 +14,6 @@ recipeCards.forEach(card => {
 });
 
 //fridge ingredients interactivity
-// style.js
 
 function handleIngredientSelection(maxIngredients, requiredIngredients = []) {
   const ingredientItems = document.querySelectorAll('.ingredient-item');
@@ -35,7 +34,7 @@ function handleIngredientSelection(maxIngredients, requiredIngredients = []) {
           selectedIngredients--;
         }
       } else {
-        alert(`You can only select a maximum of ${maxIngredients} ingredients.`);
+        alert(`You can only select a maximum of 5 {maxIngredients} ingredients.`);
       }
     });
   });
