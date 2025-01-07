@@ -14,13 +14,11 @@ recipeCards.forEach(card => {
 });
 
 //green border when clicked
-// Get all ingredient-item elements
 const ingredientItems = document.querySelectorAll('.ingredient-item');
 
 // Add click event listener to each ingredient-item
 ingredientItems.forEach(item => {
   item.addEventListener('click', () => {
-    // Toggle the 'selected' class on the clicked item
     item.classList.toggle('selected'); 
   });
 });
