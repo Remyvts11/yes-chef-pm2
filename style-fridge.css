@@ -17,17 +17,17 @@ h1 {
     justify-content: center; 
     align-items: center; 
     flex-wrap: wrap;
+
 }
 
 .ingredient-item {
     flex-direction: row; 
     margin: 40px; 
-    width: 100px; 
     cursor: pointer;
 }
-.selected {
-    border: auto solid green; /* Adjust border color as needed */
-    transform: scale(1.05); /* Optional: Slightly enlarge the selected item */
+.ingredient-item.selected {
+    border: solid green; 
+    transform: scale(1.05); 
 }
 
 .ingredient-icon {
@@ -39,7 +39,13 @@ h1 {
     text-align: center;
 }
 
-.ingredient-card:hover {
-    transform: scale(1.05); /* Increase card size slightly on hover */
+#submit-button {
+    display: block;
+    background-color: #DC143C;
+    color: #ffffff;
+    border-color: #DC143C;
+    width: 150px;
+    height : 50px;
+    margin: 0 auto;
+    font-weight: bold;
   }
-
