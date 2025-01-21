@@ -24,7 +24,7 @@ h1 {
     margin: 40px; 
     cursor: pointer;
 }
-.ingredient-item.selected {
+.ingredient-item .selected {
     border: solid green; 
     transform: scale(1.05); 
 }

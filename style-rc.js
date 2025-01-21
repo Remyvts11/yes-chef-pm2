@@ -1,33 +1,20 @@
-setTimeout(() => {
-    window.location.href = "fridge.html"; 
-  }, 5000); 
+// Get the timer text element
+const timerText = document.querySelector('.timer-text');
 
-  //recipe cards clickability
-const recipeCards = document.querySelectorAll('.recipe-card');
+// Initialize timeLeft to 5 seconds
+let timeLeft = 5;
 
-recipeCards.forEach(card => {
-  card.addEventListener('click', () => {
-    card.classList.toggle('active'); 
-  });
-});
+// Start the countdown timer
+const timerInterval = setInterval(() => {
+  timerText.textContent = timeLeft; // Update the text with the remaining time
 
-//start timers and make them move
-const timerContainer = document.querySelector('.timer-container');
-    const timerText = document.querySelector('.timer-text');
+  // When the time reaches 0, stop the timer and redirect to fridge.html
+  if (timeLeft <= 0) {
+    clearInterval(timerInterval);  // Stop the interval once time is up
+    window.location.href = "fridge.html";  // Redirect to the fridge page
+  }
 
-    function startTimer() {
-      let timeLeft = 5;
-    
-      const timerInterval = setInterval(() => {
-        timerText.textContent = timeLeft; 
-    
-        if (timeLeft <= 0) {
-          clearInterval(timerInterval); 
-          const randomIndex = Math.floor(Math.random() * 4); // Generate random index
-          const randomPage = ['pizza-rc.html', 'salade-rc.html', 'prawn-rc.html', 'patatas-rc.html'][randomIndex]; 
-          window.location.href = randomPage; 
-        }
-    
-        timeLeft--; // Decrement the time
-      }, 1000); // Update every 1 second
-    }
+  // Decrease the time left by 1 second
+  timeLeft--;
+}, 1000); // Update every 1 second
+
