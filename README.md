@@ -185,3 +185,30 @@ Favicon fetched from https://www.favicon.cc/
  ![wrong.html]()
 
  ### Testing table 
+ Expected - Game is expected to show user a selection of menus they should choose from when the home page is first loaded
+ Tested   - Tested the game by loading the home page
+ Result   - Game acted as expected and presented me with recipe cards to select
+
+ Expected - Game is expected to take me to an ingredient list when a recipe card is selected 
+ Tested   - Tested the game by selecting a recipe card
+ Result   - Game acted as expected and took me to the recipe card page displaying a lost of ingredients 
+
+ Expected - Game is expected to start a 5 second timer when recipe card is clicked 
+ Tested   - Tested the game by clicking on a recipe card
+ Result   - Game acted as expected and started the timer when loaded
+
+ Expected - Game is expected to automatically take player to the fridge page when timer is up
+ Tested   - Tested the game by letting the timer run out on the recipe card page
+ Result   - Game acted as expected and automatically took user to fridge page
+
+ Expected - Game is expected to show player what ingredient items they have selected in the fridge by showing a green border when item is clicked 
+ Tested   - Tested the game by clicking multiple ingredient items
+ Result   - Game acted as expected and a green border appears when ingredient item has been selected
+
+ Expected - Game is expected to tell player wether they have selected the correct ingredients based on the recipe card they previously chose
+ Tested   - Tested the game by chosing the correct items for the recipe card selected and submitting them
+ Result   - Game acted as expected and produced a congratulations pop up message letting the player know they were correct 
+   Expected - Game is expected to tell player wether they have selected the correct ingredients based on the recipe card they previously chose
+
+ Tested   - Tested the game by chosing the wrong items for the recipe card selected and submitting them
+ Result   - Game acted as expected and produced a try again pop up message letting the player know they were wrong
