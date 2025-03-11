@@ -1,36 +1,39 @@
-// 1. Retrieve Selected Recipe Data
-const selectedRecipe = JSON.parse(localStorage.getItem('selectedRecipe'));
+const selectedRecipe = JSON.parse(localStorage.getItem('selectedRecipe')); // Or sessionStorage
 
 if (!selectedRecipe) {
+  // Handle case where no recipe was selected (e.g., redirect to home)
   alert('No recipe selected. Please return to the home page.');
-  window.location.href = 'index.html';
+  window.location.href = 'index.html'; // Redirect to home page
 }
 
 const correctIngredients = selectedRecipe.ingredients;
 
 // 2. Ingredient Selection Logic
-const fridgeIngredients = document.querySelectorAll('.ingredient-button');
+const fridgeIngredients = document.querySelectorAll('.fridge-ingredient'); // Replace with your class
 
-fridgeIngredients.forEach((ingredientButton) => {
-  ingredientButton.addEventListener('click', () => {
-    ingredientButton.parentElement.classList.toggle('selected');
+fridgeIngredients.forEach((ingredientElement) => {
+  ingredientElement.addEventListener('click', () => {
+    ingredientElement.classList.toggle('selected'); // Toggle green border
   });
 });
 
 // 3. Submission Logic
-const submitButton = document.getElementById('submit-button');
+const submitButton = document.getElementById('submitButton'); // Replace with your button ID
 
 submitButton.addEventListener('click', () => {
   const selectedIngredients = Array.from(
-    document.querySelectorAll('.fridge-ingredient.selected .ingredient-name')
-  ).map((element) => element.textContent);
+    document.querySelectorAll('.fridge-ingredient.selected')
+  ).map((element) => element.textContent); // Or whatever data you store.
 
+  // Check if selected ingredients match correct ingredients
   const isCorrect = checkIngredients(selectedIngredients, correctIngredients);
 
   if (isCorrect) {
     alert('Congratulations! You got it right!');
+    // Handle win condition (e.g., redirect to a win page)
   } else {
     alert('Oops! You selected the wrong ingredients.');
+    // Handle lose condition (e.g., redirect to a lose page)
   }
 });
 

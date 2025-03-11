@@ -2,7 +2,7 @@
 # Contents 
 ## UX
   ### Project Goals: 
-   Yes Chef! is a fun learning-based memory game that is aimed towards staff in a resturant as it helps them learn new recipes and what ingredients go in them.
+   Yes Chef! is a fun learning-based memory game that is aimed towards staff working in a kitchen/ resturant helping them learn new recipes and what ingredients go in them in a fun and interactive way.
   
   ### Player Goals:
    The target audience for this game is primarily for staff members in a resturant/ kitchen. It can also be for anyone who wants to be entertained anmd see if they have what it takes to work in a kitchen.
@@ -105,7 +105,7 @@ Favicon fetched from https://www.favicon.cc/
  * Run code steps:
   1. Either install the code to your device or clone it following the above steps
   2. There are no necissairy dependancies to install for Yes Chef!
-  3. To run the 
+  3. To run the game follow this link: https://legendary-yodel-7vpvq4w666pxfg65-8000.app.github.dev/ 
 
  * Clone code steps:
   1. Have git installed to your computer 
@@ -117,6 +117,21 @@ Favicon fetched from https://www.favicon.cc/
 
 
 ## Testing
+ ### HTML code validated using: https://validator.w3.org/
+ ![index.html]()
+ ![index.html]()
+ ![index.html]()
+ ![index.html]()
+ ![index.html]()
+
+ ### CSS code validated using: https://jigsaw.w3.org/css-validator/
+ ![index.html]()
+ ![index.html]()
+ ![index.html]()
+
+ ### Java Script code validated using: https://codebeautify.org/jsvalidate
+ ![style.js]()
+
  A detailed explination of how the site meets the identified needs and wants found in the user stories :
 
  * As a player of the game that is working for the resturant
@@ -157,3 +172,16 @@ Favicon fetched from https://www.favicon.cc/
       10. add new recipe object to the recipe card data array
       11. add new ingredients to the ingredient data array
       12. update recipe card logic for what ingredients are true and what are false 
+
+ ### Final game screenshots 
+ ![index.html](assets/finalss/tss-1.png)
+ ![index.html](assets/finalss/tss-2.png)
+ ![prawn-rc.html](assets/finalss/tss-4.png)
+ ![patatas-rc.html](assets/finalss/tss-3.png)
+ ![salade-rc.html](assets/finalss/tss-5.png)
+ ![pizza-rc.html](assets/finalss/tss-6.png)
+ ![fridge.html](assets/finalss/tss-7.png)
+ ![correct.html]()
+ ![wrong.html]()
+
+ ### Testing table 

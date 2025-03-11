@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
 body {
-    background-color: #ffffff;  
+    background-color: #ffffff;
 }
 
 h1 {
@@ -9,24 +10,24 @@ h1 {
     color: #DC143C;
 }
 
-
-/*fridge.html styling*/
+/* fridge.html styling */
 
 .ingredient-shelf {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 20px; /* Add gap between items */
 }
 
-.ingredient-item {
-    flex-direction: row; 
-    margin: 40px; 
+.fridge-ingredient {
+    margin: 10px; /* Add margin around each ingredient */
     cursor: pointer;
 }
-.ingredient-item .selected {
-    border: solid green; 
-    transform: scale(1.05); 
+
+.fridge-ingredient .selected {
+    border: solid green;
+    transform: scale(1.05);
 }
 
 .ingredient-icon {
@@ -44,14 +45,13 @@ h1 {
     color: #ffffff;
     border-color: #DC143C;
     width: 150px;
-    height : 50px;
+    height: 50px;
     margin: 0 auto;
     font-weight: bold;
-  }
-  
-  #submit-button:hover {
-    transform: scale(1.1); /* Increase size by 10% on hover */
-    transition: transform 0.2s ease; /* Smooth transition effect */
-  }
+}
 
+#submit-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+} 
   
