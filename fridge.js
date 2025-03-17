@@ -1,37 +1,27 @@
-const selectedRecipe = JSON.parse(localStorage.getItem('selectedRecipe')); // Or sessionStorage
+const correctIngredients = JSON.parse(localStorage.getItem('selectedRecipe'));
 
-const correctIngredients = selectedRecipe.ingredients;
-
-// 2. Ingredient Selection Logic
-const fridgeIngredients = document.querySelectorAll('.fridge-ingredient'); // Replace with your class
-
+const fridgeIngredients = document.querySelectorAll('.fridge-ingredient');
 fridgeIngredients.forEach((ingredientElement) => {
   ingredientElement.addEventListener('click', () => {
-    ingredientElement.classList.toggle('selected'); // Toggle green border
+    ingredientElement.classList.toggle('selected');
   });
 });
 
-// 3. Submission Logic
-const submitButton = document.getElementById('submitButton'); // Replace with your button ID
-
+const submitButton = document.getElementById('submit-button');
 submitButton.addEventListener('click', () => {
   const selectedIngredients = Array.from(
     document.querySelectorAll('.fridge-ingredient.selected')
-  ).map((element) => element.textContent); // Or whatever data you store.
+  ).map((element) => element.querySelector('.ingredient-name').textContent);
 
-  // Check if selected ingredients match correct ingredients
   const isCorrect = checkIngredients(selectedIngredients, correctIngredients);
 
   if (isCorrect) {
     alert('Congratulations! You got it right!');
-    // Handle win condition (e.g., redirect to a win page)
   } else {
     alert('Oops! You selected the wrong ingredients.');
-    // Handle lose condition (e.g., redirect to a lose page)
   }
 });
 
-// 4. Ingredient Checking Function
 function checkIngredients(selected, correct) {
   if (selected.length !== correct.length) {
     return false;

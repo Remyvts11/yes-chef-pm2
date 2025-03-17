@@ -25,7 +25,7 @@ h1 {
     cursor: pointer;
 }
 
-.fridge-ingredient .selected {
+.fridge-ingredient.selected {
     border: solid green;
     transform: scale(1.05);
 }
