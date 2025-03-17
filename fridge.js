@@ -1,11 +1,5 @@
 const selectedRecipe = JSON.parse(localStorage.getItem('selectedRecipe')); // Or sessionStorage
 
-if (!selectedRecipe) {
-  // Handle case where no recipe was selected (e.g., redirect to home)
-  alert('No recipe selected. Please return to the home page.');
-  window.location.href = 'index.html'; // Redirect to home page
-}
-
 const correctIngredients = selectedRecipe.ingredients;
 
 // 2. Ingredient Selection Logic

@@ -118,14 +118,15 @@ Favicon fetched from https://www.favicon.cc/
 
 ## Testing
  ### HTML code validated using: https://validator.w3.org/
- ![index.html]()
- ![index.html]()
- ![index.html]()
- ![index.html]()
- ![index.html]()
+ ![index.html](assets/validators/index.htmlvalidtorss.png)
+ ![prawns-rc.html](assets/validators/prawns.htmlvalidatorss.png)
+ ![patatas-rc.html](assets/validators/patatas.htmlvalidatorss.png)
+ ![pizza-rc.html](assets/validators/pizza.htmlvalidatorss.png)
+ ![salade-rc.html](assets/validators/salade.htmlvalidatorss.png)
+ ![fridge.html](assets/validators/fridge.htmlvalidatorss.png)
 
  ### CSS code validated using: https://jigsaw.w3.org/css-validator/
- ![index.html]()
+ ![style.css]()
  ![index.html]()
  ![index.html]()
 
@@ -208,7 +209,7 @@ Favicon fetched from https://www.favicon.cc/
  Expected - Game is expected to tell player wether they have selected the correct ingredients based on the recipe card they previously chose
  Tested   - Tested the game by chosing the correct items for the recipe card selected and submitting them
  Result   - Game acted as expected and produced a congratulations pop up message letting the player know they were correct 
-   Expected - Game is expected to tell player wether they have selected the correct ingredients based on the recipe card they previously chose
+ Expected - Game is expected to tell player wether they have selected the correct ingredients based on the recipe card they previously chose
 
  Tested   - Tested the game by chosing the wrong items for the recipe card selected and submitting them
  Result   - Game acted as expected and produced a try again pop up message letting the player know they were wrong

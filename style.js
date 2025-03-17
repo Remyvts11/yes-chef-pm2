@@ -17,25 +17,18 @@ function startGame(recipeName) {
   });
  });
 
- //store recipe ingredients
- const recipes = {
-  "prawns": {
-    name: "Prawns",
-    ingredients: ["prawns", "olive oil"],
-  },
-  "patatas": {
-    name: "Patatas",
-    ingredients: ["potatoes", "olive oil", "salt"],
-  },
-  "salade": {
-    name: "Salade",
-    ingredients: ["lettuce", "tomatoes", "salad dressing", "chicken"],
-  },
-    "pizza": {
-      name: "Pizza",
-      ingredients: ["pizza base", "tomato sauce", "ham", "cheese", "salami"],
-    },
-};
+//store recipes in local storage 
+function startGame(recipe) {
+  const recipes = {
+    prawn: ["prawns", "olive oil"],
+    patatas: ["potatoes", "salt", "oil"],
+    salad: ["lettuce", "tomatoes", "salad", "chicken"],
+    pizza: ["cheese", "tomato sauce", "pizza base", "ham", "salami"]
+  };
+
+  localStorage.setItem('selectedRecipe', JSON.stringify(recipes[recipe]));
+  location.href = 'fridge.html';
+}
  
  
  
