@@ -1,40 +1,77 @@
-const correctIngredients = JSON.parse(localStorage.getItem('selectedRecipe'));
+// Get the selected recipe from localStorage
 
-const fridgeIngredients = document.querySelectorAll('.fridge-ingredient');
-fridgeIngredients.forEach((ingredientElement) => {
-  ingredientElement.addEventListener('click', () => {
-    ingredientElement.classList.toggle('selected');
-  });
-});
+const selectedRecipe = localStorage.getItem('selectedRecipe'); 
 
-const submitButton = document.getElementById('submit-button');
-submitButton.addEventListener('click', () => {
-  const selectedIngredients = Array.from(
-    document.querySelectorAll('.fridge-ingredient.selected')
-  ).map((element) => element.querySelector('.ingredient-name').textContent);
 
-  const isCorrect = checkIngredients(selectedIngredients, correctIngredients);
 
-  if (isCorrect) {
-    alert('Congratulations! You got it right!');
-  } else {
-    alert('Oops! You selected the wrong ingredients.');
-  }
-});
+// Get the recipe ingredients based on the selected recipe
 
-function checkIngredients(selected, correct) {
-  if (selected.length !== correct.length) {
-    return false;
-  }
+let recipeIngredients = []; 
 
-  const sortedSelected = selected.slice().sort();
-  const sortedCorrect = correct.slice().sort();
+if (selectedRecipe) { 
 
-  for (let i = 0; i < sortedSelected.length; i++) {
-    if (sortedSelected[i] !== sortedCorrect[i]) {
-      return false;
-    }
-  }
+  recipeIngredients = recipes[selectedRecipe]; 
 
-  return true;
 }
+
+
+
+ingredientItems.forEach(ingredientItem => {
+
+  ingredientItem.addEventListener('click', () => {
+
+    ingredientItem.classList.toggle('selected');
+
+
+
+    if (ingredientItem.classList.contains('selected')) {
+
+      selectedIngredients.push(ingredientItem.querySelector('.ingredient-name').textContent);
+
+    } else {
+
+      selectedIngredients = selectedIngredients.filter(ingredient => ingredient !== ingredientItem.querySelector('.ingredient-name').textContent);
+
+    }
+
+  });
+
+});
+
+
+
+//to make sure player submits an answer 
+
+submitButton.addEventListener('click', () => {
+
+  if (selectedIngredients.length === 0) {
+
+    alert('Please select some ingredients!');
+
+    return;
+
+  }
+
+
+
+  // Check selected ingredients against the actual recipe ingredients
+
+  const correctIngredients = selectedIngredients.filter(ingredient => recipeIngredients.includes(ingredient));
+
+
+
+  if (correctIngredients.length === recipeIngredients.length) {
+
+    alert('Congratulations! You selected all the correct ingredients.');
+
+    // Success scenario
+
+  } else {
+
+    alert('Oops! You missed some ingredients.');
+
+    // Failure scenario
+
+  }
+
+});

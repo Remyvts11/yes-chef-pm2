@@ -29,9 +29,3 @@ function startGame(recipe) {
   localStorage.setItem('selectedRecipe', JSON.stringify(recipes[recipe]));
   location.href = 'fridge.html';
 }
- 
- 
- 
-
- 
-
