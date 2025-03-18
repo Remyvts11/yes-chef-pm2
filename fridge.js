@@ -1,3 +1,6 @@
+// Retrieve the selected recipe from localStorage
+const selectedRecipe = JSON.parse(localStorage.getItem('selectedRecipe'));
+
 let selectedIngredients = [];
 
 const fridgeIngredients = document.querySelectorAll('.fridge-ingredient');
@@ -25,9 +28,9 @@ submitButton.addEventListener('click', () => {
   }
 
   // Check selected ingredients against the actual recipe ingredients
-  const correctIngredients = selectedIngredients; //correct ingredients are already stored in local storage.
+  const correctIngredients = selectedRecipe; //correct ingredients are already stored in local storage.
 
-  if (correctIngredients.length === selectedRecipe.length) {
+  if (correctIngredients.length === selectedIngredients.length) {
     alert('Congratulations! You selected all the correct ingredients.');
     // Success scenario
   } else {
@@ -35,3 +38,4 @@ submitButton.addEventListener('click', () => {
     // Failure scenario
   }
 });
+
