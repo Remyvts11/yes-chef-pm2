@@ -10,7 +10,7 @@ const timerInterval = setInterval(() => {
 
   // When the time reaches 0, stop the timer and redirect to fridge.html
   if (timeLeft <= 0) {
-    clearInterval(timerInterval);  // Stop the interval once time is up
+    clearInterval(timerInterval);  // Stop the interval once timer is up
     window.location.href = "fridge.html";  // Redirect to the fridge page
   }
 
