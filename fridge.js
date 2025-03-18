@@ -1,77 +1,37 @@
-// Get the selected recipe from localStorage
+let selectedIngredients = [];
 
-const selectedRecipe = localStorage.getItem('selectedRecipe'); 
+const fridgeIngredients = document.querySelectorAll('.fridge-ingredient');
 
-
-
-// Get the recipe ingredients based on the selected recipe
-
-let recipeIngredients = []; 
-
-if (selectedRecipe) { 
-
-  recipeIngredients = recipes[selectedRecipe]; 
-
-}
-
-
-
-ingredientItems.forEach(ingredientItem => {
-
-  ingredientItem.addEventListener('click', () => {
-
-    ingredientItem.classList.toggle('selected');
-
-
-
-    if (ingredientItem.classList.contains('selected')) {
-
-      selectedIngredients.push(ingredientItem.querySelector('.ingredient-name').textContent);
-
+fridgeIngredients.forEach((ingredientElement) => {
+  ingredientElement.addEventListener('click', () => {
+    ingredientElement.classList.toggle('selected');
+    const ingredientName = ingredientElement.querySelector('.ingredient-name').textContent;
+    if(ingredientElement.classList.contains('selected')) {
+      selectedIngredients.push(ingredientName);
     } else {
-
-      selectedIngredients = selectedIngredients.filter(ingredient => ingredient !== ingredientItem.querySelector('.ingredient-name').textContent);
-
+      const index = selectedIngredients.indexOf(ingredientName);
+      if(index > -1) {
+        selectedIngredients.splice(index, 1);
+      }
     }
-
   });
-
 });
 
-
-
-//to make sure player submits an answer 
-
+const submitButton = document.getElementById('submit-button');
 submitButton.addEventListener('click', () => {
-
   if (selectedIngredients.length === 0) {
-
     alert('Please select some ingredients!');
-
     return;
-
   }
-
-
 
   // Check selected ingredients against the actual recipe ingredients
+  const correctIngredients = selectedIngredients; //correct ingredients are already stored in local storage.
 
-  const correctIngredients = selectedIngredients.filter(ingredient => recipeIngredients.includes(ingredient));
-
-
-
-  if (correctIngredients.length === recipeIngredients.length) {
-
+  if (correctIngredients.length === selectedRecipe.length) {
     alert('Congratulations! You selected all the correct ingredients.');
-
     // Success scenario
-
   } else {
-
     alert('Oops! You missed some ingredients.');
-
     // Failure scenario
-
   }
-
 });
