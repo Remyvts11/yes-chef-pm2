@@ -32,7 +32,7 @@ submitButton.addEventListener("click", () => {
       selectedIngredients.push(ingredientName);
     }
   });
-
+ 
   if (selectedIngredients.length === 0) {
     alert("Please select some ingredients!");
     return;
@@ -43,6 +43,7 @@ submitButton.addEventListener("click", () => {
   console.log(selectedIngredients);
   console.log(correctIngredients);
 
+  // Check if both arrays have the same length AND the same contents
   if (
     correctIngredients.length === selectedIngredients.length &&
     correctIngredients.every((ingredient) => selectedIngredients.includes(ingredient))
@@ -54,4 +55,3 @@ submitButton.addEventListener("click", () => {
     // Failure scenario
   }
 });
-
