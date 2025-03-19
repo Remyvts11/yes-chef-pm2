@@ -27,7 +27,6 @@ h1 {
 
 .fridge-ingredient.selected {
     border:  2px solid green;
-    transform: scale(1.05);
 }
 
 .ingredient-icon {
