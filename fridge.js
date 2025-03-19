@@ -20,23 +20,37 @@ fridgeIngredients.forEach((ingredientElement) => {
   });
 });
 
-const submitButton = document.getElementById('submit-button');
-submitButton.addEventListener('click', () => {
+const submitButton = document.getElementById("submit-button");
+submitButton.addEventListener("click", () => {
+  // Reset selectedIngredients before each submission
+  selectedIngredients = [];
+
+  // Re-populate selectedIngredients based on the currently selected elements
+  fridgeIngredients.forEach((ingredientElement) => {
+    if (ingredientElement.classList.contains("selected")) {
+      const ingredientName = ingredientElement.querySelector(".ingredient-name").textContent;
+      selectedIngredients.push(ingredientName);
+    }
+  });
+
   if (selectedIngredients.length === 0) {
-    alert('Please select some ingredients!');
+    alert("Please select some ingredients!");
     return;
   }
 
-  // Check selected ingredients against the actual recipe ingredients
-  const correctIngredients = selectedRecipe; //correct ingredients are already stored in local storage.
-  console.log(selectedRecipe)
-  console.log(selectedIngredients)
-  console.log(correctIngredients)
-  if (correctIngredients.length === selectedIngredients.length) {
-    alert('Congratulations! You selected all the correct ingredients.');
+  const correctIngredients = selectedRecipe;
+  console.log(selectedRecipe);
+  console.log(selectedIngredients);
+  console.log(correctIngredients);
+
+  if (
+    correctIngredients.length === selectedIngredients.length &&
+    correctIngredients.every((ingredient) => selectedIngredients.includes(ingredient))
+  ) {
+    alert("Congratulations! You selected all the correct ingredients.");
     // Success scenario
   } else {
-    alert('Oops! You missed some ingredients.');
+    alert("Oops! You missed some ingredients.");
     // Failure scenario
   }
 });
