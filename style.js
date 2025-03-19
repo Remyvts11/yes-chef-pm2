@@ -1,9 +1,9 @@
 //store recipes in local storage
   const recipes = {
-    prawn: ["prawns", "olive oil"],
-    patatas: ["potatoes", "salt", "olive oil"],
-    salad: ["lettuce", "tomatoes", "salad dressing", "chicken"],
-    pizza: ["pizza base", "tomato sauce", "cheese", "ham", "salami"]
+    prawn: ["olive oil","prawns"],
+    patatas: ["olive oil", "potatoes", "salt"],
+    salad: ["chicken", "lettuce", "salad dressing", "tomatoes"],
+    pizza: ["cheese", "ham", "pizza base", "salami", "tomato sauce"]
   };
   function startGame(recipeName) {
     localStorage.setItem('selectedRecipe', JSON.stringify(recipes[recipeName]));

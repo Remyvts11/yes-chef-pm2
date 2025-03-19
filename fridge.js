@@ -29,7 +29,9 @@ submitButton.addEventListener('click', () => {
 
   // Check selected ingredients against the actual recipe ingredients
   const correctIngredients = selectedRecipe; //correct ingredients are already stored in local storage.
-
+  console.log(selectedRecipe)
+  console.log(selectedIngredients)
+  console.log(correctIngredients)
   if (correctIngredients.length === selectedIngredients.length) {
     alert('Congratulations! You selected all the correct ingredients.');
     // Success scenario
