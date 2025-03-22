@@ -32,7 +32,7 @@ submitButton.addEventListener("click", () => {
       selectedIngredients.push(ingredientName);
     }
   });
- 
+
   if (selectedIngredients.length === 0) {
     alert("Please select some ingredients!");
     return;
@@ -43,10 +43,14 @@ submitButton.addEventListener("click", () => {
   console.log(selectedIngredients);
   console.log(correctIngredients);
 
+  // Sort both arrays before comparison
+  const sortedSelected = selectedIngredients.slice().sort(); // Create a copy and sort
+  const sortedCorrect = correctIngredients.slice().sort();
+
   // Check if both arrays have the same length AND the same contents
   if (
-    correctIngredients.length === selectedIngredients.length &&
-    correctIngredients.every((ingredient) => selectedIngredients.includes(ingredient))
+    sortedCorrect.length === sortedSelected.length &&
+    sortedCorrect.every((ingredient) => sortedSelected.includes(ingredient))
   ) {
     alert("Congratulations! You selected all the correct ingredients.");
     // Success scenario
