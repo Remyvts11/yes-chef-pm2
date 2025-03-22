@@ -41,7 +41,9 @@
  Backgrounds: All game pages have a matching blank white background as a design choice, to keep players foucus on the ingredient items and their icons stand out better against plain white.
 
 ## Wireframes
- All pages and size versions for this project are on the same wireframe document which can be viewed via: https://share.balsamiq.com/c/mrysThG1JfWhtAhTkX4s8M.jpg 
+ ![index.html](assets/wireframes/wireframeinex.html.png)
+ ![rc.html](assets/wireframes/wireframe.rc.png)
+ ![fridge.html](assets/wireframes/wireframe.fridge.png)
 
 ## Bugs Discovered 
  1. Table of images not staying in a horizontal grid layout in fridge.html
