@@ -135,7 +135,7 @@ Favicon fetched from https://www.favicon.cc/
  ### Java Script code validated using: https://codebeautify.org/jsvalidate
  ![style.js]()
 
- A detailed explination of how the site meets the identified needs and wants found in the user stories :
+ ### How the game meets the identified needs and wants found in the user stories :
 
  * As a player of the game that is working for the resturant
    -As an employee that works in the kitchen I want to be able to learn ehat ingredients go in the new recipes in a fun way
@@ -162,7 +162,8 @@ Favicon fetched from https://www.favicon.cc/
    -to have a game that can be easily updated with new recipes when required
     i. developed through git for version control and code written in a GitHub repository that stores and saves code whilst also allowing it to be modified and shared with anyone that has access to the link
     ii. code kept in a simple structure to ensure simplicity of adding new recipe cards 
-     Steps to add a new recipe card:
+
+     #### Steps to add a new recipe card:
       1. make note of recipe name and all ingredients that it calls for
       2. create a new file and name it insert_recipe_name-rc.html 
       3. copy all code from prawn-rc.html and paste into the new file
@@ -214,4 +215,5 @@ Favicon fetched from https://www.favicon.cc/
  Expected - Game is expected to tell player wether they have selected the correct ingredients based on the recipe card they previously chose
 
  Tested   - Tested the game by chosing the wrong items for the recipe card selected and submitting them
+ Expected - Gme will alert user that they missed some ingredients
  Result   - Game acted as expected and produced a try again pop up message letting the player know they were wrong
