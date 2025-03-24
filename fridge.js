@@ -1,6 +1,6 @@
 // Retrieve the selected recipe from localStorage
 const selectedRecipe = JSON.parse(localStorage.getItem('selectedRecipe'));
-
+console.log(selectedRecipe)
 let selectedIngredients = [];
 
 const fridgeIngredients = document.querySelectorAll('.fridge-ingredient');
