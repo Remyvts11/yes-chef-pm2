@@ -49,7 +49,7 @@ submitButton.addEventListener("click", () => {
 
   // Check if both arrays have the same length AND the same contents
   console.log(sortedCorrect)
-  console.log(sortedSelect)
+  console.log(sortedSelected)
   if (
     sortedCorrect.length === sortedSelected.length &&
     sortedCorrect.every((ingredient) => sortedSelected.includes(ingredient))
