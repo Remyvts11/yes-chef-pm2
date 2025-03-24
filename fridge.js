@@ -28,7 +28,7 @@ submitButton.addEventListener("click", () => {
   // Re-populate selectedIngredients based on the currently selected elements
   fridgeIngredients.forEach((ingredientElement) => {
     if (ingredientElement.classList.contains("selected")) {
-      const ingredientName = ingredientElement.querySelector(".ingredient-name").textContent;
+      const ingredientName = ingredientElement.querySelector(".ingredient-name").textContent.toLowerCase();
       selectedIngredients.push(ingredientName);
     }
   });
