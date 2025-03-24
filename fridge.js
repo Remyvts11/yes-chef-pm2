@@ -48,6 +48,8 @@ submitButton.addEventListener("click", () => {
   const sortedCorrect = correctIngredients.slice().sort();
 
   // Check if both arrays have the same length AND the same contents
+  console.log(sortedCorrect)
+  console.log(sortedSelect)
   if (
     sortedCorrect.length === sortedSelected.length &&
     sortedCorrect.every((ingredient) => sortedSelected.includes(ingredient))
@@ -59,3 +61,4 @@ submitButton.addEventListener("click", () => {
     // Failure scenario
   }
 });
+
