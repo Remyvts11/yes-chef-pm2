@@ -6,7 +6,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: xxxx-large;
+    font-size: larger;
     color: #DC143C;
 }
 
@@ -42,7 +42,7 @@ h1 {
     display: block;
     background-color: #DC143C;
     color: #ffffff;
-    border-color: #DC143C;
+    border-color: #6f0a1e;
     width: 150px;
     height: 50px;
     margin: 0 auto;
