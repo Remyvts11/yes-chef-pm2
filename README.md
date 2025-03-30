@@ -168,7 +168,7 @@ Favicon fetched from https://www.favicon.cc/
       2. create a new file and name it insert_recipe_name-rc.html 
       3. copy all code from prawn-rc.html and paste into the new file
       4. change all words matching 'prawn' to the new recipe name (headings)
-      5. change all ingredinets from 'oil' and 'prawns' to the ingredients for the new recipe
+      5. change all ingredients from 'olive oil' and 'prawns' to the ingredients for the new recipe
       6. replace all prawn images and alt text to match new ingredients
       7. modify the difficulty level of new recipe card to match the amount of ingredients in recipe (more stars = increased difficulty)
       8. in index.html, copy and paste a new div for the recipe card and modify content to match new recipe
