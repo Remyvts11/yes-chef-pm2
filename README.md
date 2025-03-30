@@ -128,9 +128,9 @@ Favicon fetched from https://www.favicon.cc/
  ![fridge.html](assets/validators/fridge.htmlvalidatorss.png)
 
  ### CSS code validated using: https://jigsaw.w3.org/css-validator/
- ![style.css]()
- ![index.html]()
- ![index.html]()
+ ![style.css](assets/validators/cssvalidatorindex.png)
+ ![style-rc.css](assets/validators/cssvalidtaorrc.png)
+ ![style-fridge.css](assets/validators/cssvalidtaorfridge.png)
 
  ### Java Script code validated using: https://codebeautify.org/jsvalidate
  ![style.js]()
