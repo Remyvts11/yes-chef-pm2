@@ -121,10 +121,10 @@ Favicon fetched from https://www.favicon.cc/
 ## Testing
  ### HTML code validated using: https://validator.w3.org/
  ![index.html](assets/validators/index.htmlvalidtorss.png)
- ![prawns-rc.html](assets/validators/prawns.htmlvalidatorss.png)
- ![patatas-rc.html](assets/validators/patatas.htmlvalidatorss.png)
- ![pizza-rc.html](assets/validators/pizza.htmlvalidatorss.png)
- ![salade-rc.html](assets/validators/salade.htmlvalidatorss.png)
+ ![recipePrawns.html](assets/validators/prawns.htmlvalidatorss.png)
+ ![recipePatatas.html](assets/validators/patatas.htmlvalidatorss.png)
+ ![recipePizza.html](assets/validators/pizza.htmlvalidatorss.png)
+ ![Salad.html](assets/validators/salad.htmlvalidatorss.png)
  ![fridge.html](assets/validators/fridge.htmlvalidatorss.png)
 
  ### CSS code validated using: https://jigsaw.w3.org/css-validator/
@@ -180,10 +180,10 @@ Favicon fetched from https://www.favicon.cc/
  ### Final game screenshots 
  ![index.html](assets/finalss/tss-1.png)
  ![index.html](assets/finalss/tss-2.png)
- ![prawn-rc.html](assets/finalss/tss-4.png)
- ![patatas-rc.html](assets/finalss/tss-3.png)
- ![salade-rc.html](assets/finalss/tss-5.png)
- ![pizza-rc.html](assets/finalss/tss-6.png)
+ ![recipePrawn.html](assets/finalss/tss-4.png)
+ ![recipePatatas.html](assets/finalss/tss-3.png)
+ ![recipeSalad.html](assets/finalss/tss-5.png)
+ ![recipePizza.html](assets/finalss/tss-6.png)
  ![fridge.html](assets/finalss/tss-7.png)
  ![correct.html]()
  ![wrong.html]()
