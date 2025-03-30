@@ -12,5 +12,5 @@ function startGame(recipeName) {
 
   // Set the new selectedRecipe item
   localStorage.setItem("selectedRecipe", JSON.stringify(recipes[recipeName]));
-  location.href = "fridge.html";
+  location.href = "recipe";
 }
