@@ -1,4 +1,4 @@
-// assets/scripts/style.js
+//store recipes in local storage
 const recipes = {
   prawn: ["oliveOil","prawns"],
   patatas: ["oliveOil", "potatoes", "salt"],
@@ -7,13 +7,10 @@ const recipes = {
 };
 
 function startGame(recipeName) {
-  // Clear the existing selectedRecipe item (good practice)
+  // Clear the existing selectedRecipe item
   localStorage.removeItem("selectedRecipe");
 
   // Set the new selectedRecipe item
   localStorage.setItem("selectedRecipe", JSON.stringify(recipes[recipeName]));
-
-  // NOW, navigate to the fridge page
-  window.location.href = "fridge.html"; // Assuming fridge.html is in the same directory
+  location.href = "fridge.html";
 }
-
