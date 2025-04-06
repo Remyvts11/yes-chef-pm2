@@ -1,16 +1,19 @@
-//store recipes in local storage
-const recipes = {
-  prawn: ["oliveOil","prawns"],
-  patatas: ["oliveOil", "potatoes", "salt"],
-  salad: ["chicken", "lettuce", "saladDressing", "tomatoes"],
-  pizza: ["cheese", "ham", "pizzaBase", "salami", "tomatoSauce"]
-};
-
 function startGame(selectedRecipe) {
-  // Clear the existing selectedRecipe item
-  localStorage.removeItem("selectedRecipe");
-
-  // Set the new selectedRecipe item
   localStorage.setItem("selectedRecipe", JSON.stringify(recipes[selectedRecipe]));
-  location.href = "recipe";
+
+  // Redirect to specific recipe page
+  switch (selectedRecipe) {
+    case "prawn":
+      location.href = "recipePrawn.html";
+      break;
+    case "patatas":
+      location.href = "recipePatatas.html";
+      break;
+    case "salad":
+      location.href = "recipeSalad.html";
+      break;
+    case "pizza":
+      location.href = "recipePizza.html";
+      break;
+  }
 }
