@@ -5,6 +5,11 @@ body {
     font-family: sans-serif; 
 }
 
+header {
+  display: block; /* take header out of body's flex layout */
+  text-align: center; 
+}
+
 h1 {
   text-align: center;
   font-size: larger;
@@ -38,10 +43,10 @@ h1 {
     height: 150px;
     border-radius: 50%;
     background-color: #DC143C;
-    display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px; /* Add some space between the card and timer */
+    display: flex; 
+    margin: auto;
   }
 
   .timer-text {
