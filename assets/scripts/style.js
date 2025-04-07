@@ -11,26 +11,24 @@ const recipes = {
   pizza: ["cheese", "ham", "pizzaBase", "salami", "tomatoSauce"],
   
   };
-  
-  
-  
+
   function startGame(recipeName) {
-    // Clear the existing selectedRecipe item
+    // Remove any existing selectedRecipe from localStorage
     localStorage.removeItem("selectedRecipe");
   
-    // Get the ingredients for the selected recipe from the 'recipes' object
+    // Get the ingredients for the selected recipe
     const selectedIngredients = recipes[recipeName];
   
-    // Store the selected recipe ingredients in localStorage as a JSON string
+    // Save the ingredients array to localStorage
     localStorage.setItem("selectedRecipe", JSON.stringify(selectedIngredients));
   
-    // Optionally, store the recipe name as well (for use on the recipeDisplay page)
+    // Optionally, save the recipe name too, if needed
     localStorage.setItem("selectedRecipeName", recipeName);
   
-    // Navigate to the recipe display page, passing the recipe name as a parameter
-    window.location.href = `recipeDisplay.html?recipe=${recipeName}`;
+    // Navigate to the appropriate recipe page (e.g., recipeDisplay-prawn.html)
+    window.location.href = `recipe${capitalize(recipeName)}.html`;
   }
   
-  // Clear the existing selectedRecipe item
-  
-localStorage.removeItem("selectedRecipe");
+  function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
