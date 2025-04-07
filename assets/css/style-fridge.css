@@ -10,7 +10,38 @@ h1 {
     color: #DC143C;
 }
 
-/* fridge.html styling */
+.navbar.responsive {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    color: #DC143C;
+    font-size: 30px;
+}
+
+.nav-list li a:hover {
+    color: #df8a79;
+    text-decoration: underline;
+}
+
+/*ingredient shelf styling*/
 
 .ingredient-shelf {
     display: flex;
