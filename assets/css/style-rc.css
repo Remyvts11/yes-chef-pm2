@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
 body {
     background-color: #ffffff;
-    font-family: sans-serif; /* It's good to have a default font on the body */
+    font-family: sans-serif; 
 }
 
 h1 {
@@ -15,7 +15,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Remove height: 100vh; */
   }
 
 
