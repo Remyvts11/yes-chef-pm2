@@ -1,6 +1,12 @@
 // Retrieve the selected recipe from localStorage
 let selectedRecipe = JSON.parse(localStorage.getItem('selectedRecipe'));
-console.log("Stored recipe ingredients:", selectedRecipe);
+console.log("Value of selectedRecipe in fridge.js:", selectedRecipe);
+
+if (!selectedRecipe || !Array.isArray(selectedRecipe)) {
+    console.error("Error: No valid recipe found in localStorage. Redirecting to start page.");
+    window.location.href = 'index.html'; // Or your starting page
+    return; // Stop further execution to prevent errors
+}
 
 // Normalize recipe ingredients (to lowercase with no spaces)
 selectedRecipe = selectedRecipe.map(ing => ing.toLowerCase().replace(/\s+/g, ''));

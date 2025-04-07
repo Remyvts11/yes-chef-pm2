@@ -47,7 +47,7 @@
 
 ## Bugs Discovered 
  1. Table of images not staying in a horizontal grid layout in fridge.html
-  * All ingredinet would shift around the page every time they were attmepted to be styled using css properties 
+  * All ingredient would shift around the page every time they were attmepted to be styled using css properties 
   * Using the flexbox layout provided an efficient way to arrange elements within a container
 
 ## Credits
