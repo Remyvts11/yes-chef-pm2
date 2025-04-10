@@ -2,15 +2,15 @@
 
 body {
     background-color: #ffffff;
-    font-size: 16px; /* Set a base font size for rem units */
+    font-size: 16px; 
 }
 
 h1 {
     text-align: center;
-    font-size: 1.25rem; /* Equivalent to 20px if body font-size is 16px */
+    font-size: 1.25rem; 
     color: #DC143C;
-    margin-top: 1rem; /* Example responsive margin */
-    margin-bottom: 1rem; /* Example responsive margin */
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
 }
 
 .navbar.responsive {
@@ -21,7 +21,7 @@ h1 {
     top: 0;
     background-blend-mode: darken;
     background-size: cover;
-    padding: 1% 2%; /* Responsive padding */
+    padding: 1% 2%; 
 }
 
 .nav-list {
@@ -67,6 +67,7 @@ img {
     justify-content: space-between;
     font-size: 2rem; 
     flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    margin-left: 5%;
 }
 
 .recipe-card {
